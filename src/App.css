@@ -1,38 +1,545 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  font-family:  "Poppins", sans-serif;
+  overflow-x: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html{
+  scroll-behavior: smooth;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#home{
+  height: 100vh;
+  width: 100vw;
+}
+nav{
+  width: 100vw;
+  height: 18vh;
+}
+.nav1{
+  width: 100vw;
+  height:70%;
+  background-color: blue;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  
+}
+.leftnav{
+  width: 50%;
+  height: 100%;
+  font-size: 30px;
+  color: white;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-weight: 500;
+  cursor: pointer;
+}
+.leftnav:hover{
+  color: rgb(224, 217, 217);
+}
+.rightnav{
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.top{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loc{
+  height: 1em;
+width: 1em;
+
+}
+.findus{
+  width: 4em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+ justify-content: center;
+ margin-right: 20px;
+ margin-top: 10px;
+ margin-left: 10px;
+}
+.input input{
+ outline: none;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.buttom{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tool{
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 15px;
+  cursor: pointer;
+}
+.tool:hover{
+  color: rgb(202, 201, 201);
+}
+.no{
+  color: rgba(255, 166, 0, 0.685);
+  margin-left: 10px;
+  cursor: pointer;
+}
+.no:hover{
+  color: rgb(224, 174, 80);
+}
+.nav2{
+  width: 100vw;
+  height: 30%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav2 ul{
+display: flex;
+align-items: center;
+justify-content: center;
+list-style: none;
+gap: 50px;
+margin-top: 15px;
+cursor: pointer;
+}
+.nav2 ul li:hover{
+  color: grey;
+}
+.main1{
+width: 100vw;
+height: 82vh;
+background-image: url(main1.jpg);
+background-size:100% 100% ;
+position: relative;
+}
+#home ul a{
+  text-decoration: none;
+  color: black;
+}
+.bg{
+  background-color: rgba(0, 0, 0, 0.13);
+  z-index: 2;
+  height: 82vh;
+  width: 100vw;
+  position: absolute;
+}
+.mainbox{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.fspan{
+  font-size: 34px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.sspan{
+  font-size: 55px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.tspan{
+  width: 48%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50px;
+  border: 2px solid gray;
+  overflow: hidden;
+}
+.continents{
+  height: 100%;
+  width: 25%;
+
+}
+.continents select{
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 0 15px;
+}
+.countries{
+  height: 100%;
+  width: 25%;
+  border: none;
+}
+.countries select{
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 0 15px;
+}
+.budget{
+  height: 100%;
+  width: 25%;
+  cursor: pointer;
+}
+.budget select{
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+}
+.find{
+  height: 100%;
+  width: 25%;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  cursor: pointer;
+}
+#tour{
+  width: 100vw;
+  height: 100vh;
+}
+.bestoff{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.best1{
+  font-size: 39px;
+  font-weight: 700;
+}
+.best2{
+  font-size: 20px;
+}
+.main21{
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.main22{
+  width: 100%;
+  height: 35%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.img1{
+  height: 80%;
+  width: 22%;
+}
+.img11{
+  height: 80%;
+  width: 100%;
+  background-image: url(cathedral-7278228_1920.jpg);
+  background-size: 100%;
+}
+.uk{
+background-color: rgba(128, 128, 128, 0.521);
+height: 20%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.uk1{
+  margin-top: 10px;
+}
+.uk2{
+  margin-right: 10px;
+}
+.img12{
+  height: 80%;
+  width: 100%;
+  background-image: url(istanbul-915076_1920.jpg);
+  background-size: 100%;
+}
+.spa{
+  background-color: rgba(128, 128, 128, 0.521);
+height: 20%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.spa1{
+  margin-top: 10px;
+}
+.spa2{
+  margin-right: 10px;
+}
+.img13{
+  height: 80%;
+  width: 100%;
+  background-image:url(temple-1670926_1920.jpg) ;
+  background-size: 100%;
+}
+.tur{
+  background-color: rgba(128, 128, 128, 0.521);
+height: 20%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.tur1{
+  margin-top: 10px;
+}
+.tur2{
+  margin-right: 10px;
+}
+
+.img21{
+  height: 80%;
+  width: 100%;
+  background-image: url(london-3078109_1920.jpg);
+  background-size: 100%;
+}
+.thai{
+  background-color: rgba(128, 128, 128, 0.521);
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.thai1{
+  margin-top: 10px;
+}
+.thai{
+  margin-right: 10px;
+}
+
+.img22{
+  height: 80%;
+  width: 100%;
+  background-image: url(pakistan-4305430_1920.jpg);
+  background-size: 100%;
+}
+.pk{
+  background-color: rgba(128, 128, 128, 0.521);
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pk1{
+  margin-top: 10px;
+}
+.pk2{
+  margin-right: 20px;
+}
+.img23{
+  height: 80%;
+  width: 100%;
+  background-image: url(taj-mahal-3654227_1920.jpg);
+  background-size: 100%;
+}
+.ind{
+  background-color: rgba(128, 128, 128, 0.521);
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ind1{
+  margin-top: 10px;
+}
+.ind2{
+  margin-right: 20px;
+}
+#aboutus{
+  height: 100vh;
+  width: 100vw;
+  background-image: url(main.jpg.jpg);
+  background-size: 100%;
+  position: relative;
+}
+.main3{
+  height: 100vh;
+width: 100vw;
+z-index: 3;
+background-color: rgba(0, 0, 0, 0.233);
+}
+.best11{
+  color: white;
+}
+.best21{
+  color: white ;
+}
+.main31{
+  width: 100vw;
+  height: 62vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main311{
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.money{
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  background-color: white;
+  background-image: url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20enable-background%3D%22new%200%200%2024%2024%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M18%2C7h-2V6c0-2.2-1.8-4-4-4S8%2C3.8%2C8%2C6v1H6C4.9%2C7%2C4%2C7.9%2C4%2C9v10c0%2C1.7%2C1.3%2C3%2C3%2C3h10c1.7%2C0%2C3-1.3%2C3-3V9C20%2C7.9%2C19.1%2C7%2C18%2C7z%0A%09%20M10%2C6c0-1.1%2C0.9-2%2C2-2s2%2C0.9%2C2%2C2v1h-4V6z%22%2F%3E%3C%2Fsvg%3E);
+}
+.moneyearth{
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+  background-color: white;
+  background-image: url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20enable-background%3D%22new%200%200%20100%20100%22%20viewBox%3D%220%200%20100%20100%22%3E%3Cpath%20d%3D%22M85.919%2C48.333c-0.007-0.156-0.017-0.312-0.026-0.469c-0.025-0.424-0.057-0.845-0.096-1.264c-0.013-0.141-0.025-0.282-0.04-0.422c-0.059-0.558-0.131-1.113-0.216-1.665c-0.085-0.553-0.183-1.102-0.293-1.647c-0.018-0.09-0.038-0.179-0.057-0.268c-0.102-0.488-0.214-0.972-0.336-1.453c-0.016-0.064-0.032-0.129-0.048-0.193c-0.327-1.259-0.723-2.499-1.186-3.715c-0.154-0.405-0.315-0.807-0.483-1.205c-0.004-0.01-0.008-0.02-0.013-0.03c-0.205-0.483-0.424-0.959-0.65-1.432c-0.085-0.179-0.173-0.357-0.261-0.535c-0.14-0.28-0.285-0.559-0.432-0.835c-0.261-0.494-0.536-0.982-0.821-1.465c-0.034-0.058-0.067-0.116-0.101-0.173c-0.414-0.691-0.842-1.375-1.305-2.041l-1.463-2.108l-0.03%2C0.136c-3.903-4.869-9.043-8.701-14.941-11.021l0.03-0.037l-1.536-0.524c-0.117-0.04-0.235-0.074-0.353-0.113c-0.31-0.102-0.62-0.203-0.932-0.297c-0.179-0.053-0.359-0.102-0.538-0.153c-1.075-0.305-2.17-0.56-3.284-0.765c-0.257-0.047-0.514-0.097-0.774-0.139c-0.261-0.042-0.522-0.077-0.783-0.113c-0.301-0.042-0.602-0.081-0.906-0.116c-0.238-0.027-0.475-0.052-0.713-0.074c-0.354-0.033-0.711-0.059-1.068-0.081c-0.195-0.013-0.389-0.027-0.584-0.036c-0.557-0.026-1.117-0.042-1.68-0.042c-0.575%2C0-1.145%2C0.017-1.713%2C0.043c-0.146%2C0.007-0.291%2C0.018-0.436%2C0.026c-0.445%2C0.026-0.889%2C0.059-1.329%2C0.101c-0.126%2C0.012-0.253%2C0.025-0.379%2C0.038c-0.521%2C0.056-1.04%2C0.12-1.554%2C0.198c-0.028%2C0.004-0.055%2C0.008-0.082%2C0.011c-5.92%2C0.902-11.486%2C3.262-16.328%2C6.965l-0.295%2C0.226l-0.01%2C0.034C19.461%2C28.27%2C14.038%2C38.51%2C14.038%2C50c0%2C19.83%2C16.133%2C35.962%2C35.962%2C35.962c16.635%2C0%2C30.664-11.357%2C34.753-26.723l0.044%2C0.035l0.379-1.784c0.006-0.03%2C0.01-0.061%2C0.016-0.091c0.104-0.499%2C0.195-1%2C0.278-1.503c0.016-0.098%2C0.037-0.194%2C0.052-0.293c0.094-0.599%2C0.173-1.202%2C0.237-1.805c0.001-0.013%2C0.003-0.026%2C0.005-0.039c0.065-0.619%2C0.113-1.239%2C0.146-1.859c0-0.007%2C0.001-0.013%2C0.001-0.019c0.033-0.627%2C0.049-1.255%2C0.049-1.882C85.962%2C49.441%2C85.944%2C48.886%2C85.919%2C48.333z%20M50%2C83.714C31.41%2C83.714%2C16.286%2C68.59%2C16.286%2C50c0-9.518%2C3.972-18.121%2C10.337-24.258c-0.686%2C2.457-1.154%2C5.288-0.142%2C7.818l0.283%2C0.707h2.319c0.691%2C1.335%2C2.278%2C4.301%2C3.266%2C5.289l0.329%2C0.329h0.465c0.784%2C0%2C1.433%2C0.433%2C2.186%2C0.935c0.923%2C0.615%2C1.969%2C1.312%2C3.433%2C1.312c0.991%2C0%2C2.708%2C1.165%2C3.998%2C2.279l-0.552%2C0.552l-1.249%2C7.493l4.825%2C8.445l3.092%2C2.061v5.976l-3.758%2C12.527h4.32l3.371-4.495h2.247l3.498-4.663l3.432-1.145l3.418-5.695l4.57-2.285l3.902-9.104l-7.429-4.952l-8.052-8.053l-8.5-1.214l-3.875%2C1.292l-0.03%2C0.03l-1.301-2.627l-3.119-2.079V33.01l-3.15%2C1.575l-1.183-1.184l0.689-2.071l5.506-0.917l2.633%2C2.633l3.372-3.372v-2.248l2.879-2.879l5.204-2.081h3.155v-2.968l0.944-1.148c6.404%2C2.359%2C11.894%2C6.614%2C15.803%2C12.074l-1.607%2C7.228l2.278%2C9.113v7.145l4.724%2C3.779C79.328%2C72.586%2C65.944%2C83.714%2C50%2C83.714z%20M50%2C16.286c0.51%2C0%2C1.02%2C0.016%2C1.528%2C0.039c0.146%2C0.007%2C0.291%2C0.014%2C0.437%2C0.023c0.409%2C0.024%2C0.816%2C0.055%2C1.223%2C0.094c0.109%2C0.01%2C0.218%2C0.018%2C0.327%2C0.029c0.461%2C0.048%2C0.922%2C0.109%2C1.381%2C0.176c0.2%2C0.03%2C0.4%2C0.063%2C0.6%2C0.096c0.282%2C0.047%2C0.563%2C0.097%2C0.843%2C0.151c0.216%2C0.042%2C0.433%2C0.081%2C0.649%2C0.127c0.407%2C0.086%2C0.813%2C0.18%2C1.217%2C0.282c0.244%2C0.062%2C0.487%2C0.13%2C0.73%2C0.196c0.13%2C0.036%2C0.261%2C0.068%2C0.39%2C0.106l-0.004%2C0.004l-0.894%2C1.085v1.527h-1.34l-6.034%2C2.413l-3.864%2C3.864v2.248l-1.124%2C1.124l-1.862-1.862l-7.98%2C1.33l-1.558%2C4.672l3.312%2C3.312l1.345-0.673v1.03l3.624%2C2.416l0.955%2C1.91l0.2%2C0.601c-1.297-1.106-3.503-2.717-5.34-2.717c-0.784%2C0-1.433-0.433-2.186-0.935c-0.806-0.537-1.705-1.136-2.893-1.28c-0.797-1.028-2.157-3.53-2.906-5.03l-0.31-0.621H28.34c-0.624-2.472%2C0.333-5.426%2C1.117-7.841c0.134-0.414%2C0.261-0.807%2C0.373-1.176c0.001-0.004%2C0.003-0.009%2C0.004-0.013c4.895-3.662%2C10.56-5.876%2C16.569-6.508c0.113-0.012%2C0.226-0.023%2C0.339-0.034c0.415-0.04%2C0.833-0.071%2C1.251-0.096c0.136-0.008%2C0.272-0.018%2C0.409-0.024C48.933%2C16.302%2C49.465%2C16.286%2C50%2C16.286z%20M44.382%2C45.969l2.409-2.409l0%2C0l0.444-0.445l2.868-0.956l7.234%2C1.033l7.602%2C7.602l6.136%2C4.117l-2.84%2C6.629l-4.421%2C2.209l-3.325%2C5.543l-3.31%2C1.103l-3.245%2C4.326h-2.248l-3.371%2C4.495h-0.176l2.938-9.791l0.047-7.667l-3.651-2.434l-4.165-7.289l0.998-5.993L44.382%2C45.969L44.382%2C45.969z%20M83.296%2C55.194l-2.954-2.363v-6.202l-2.217-9.006l1.011-4.551l0.005-0.021c1.56%2C2.673%2C2.731%2C5.529%2C3.499%2C8.499c0.008%2C0.03%2C0.015%2C0.061%2C0.023%2C0.091c0.263%2C1.03%2C0.478%2C2.073%2C0.642%2C3.128c0.013%2C0.083%2C0.025%2C0.166%2C0.037%2C0.249c0.073%2C0.491%2C0.137%2C0.983%2C0.188%2C1.478c0.003%2C0.028%2C0.007%2C0.055%2C0.009%2C0.083c0.051%2C0.507%2C0.088%2C1.016%2C0.117%2C1.527c0.007%2C0.116%2C0.012%2C0.233%2C0.017%2C0.349c0.024%2C0.514%2C0.04%2C1.03%2C0.04%2C1.547c0%2C0.514-0.016%2C1.027-0.039%2C1.542c-0.008%2C0.178-0.02%2C0.357-0.031%2C0.536c-0.02%2C0.332-0.046%2C0.664-0.076%2C0.997c-0.019%2C0.206-0.037%2C0.413-0.06%2C0.619c-0.036%2C0.323-0.079%2C0.645-0.124%2C0.967C83.359%2C54.839%2C83.324%2C55.015%2C83.296%2C55.194z%22%2F%3E%3C%2Fsvg%3E);
+}
+.moneylike{
+height: 60px;
+width: 60px;
+border-radius: 50px;
+background-color: white;
+background-image: url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2074%2074%22%3E%3Cpath%20d%3D%22M11.09%2029.12H6a2.63%202.63%200%2000-2.63%202.63V69.37A2.63%202.63%200%20006%2072h5.08a8.51%208.51%200%20008.45-7.14%207.14%207.14%200%2000.13-1.44V37.7A8.7%208.7%200%200019.23%2035%208.57%208.57%200%200011.09%2029.12zM69%2041.42a6.37%206.37%200%2000-1.87-4.51l-.37-.34a6.31%206.31%200%20002-1.36%206.13%206.13%200%20001.83-4.4%206.24%206.24%200%2000-6.22-6.23H43a17.11%2017.11%200%20001.49-4.7A18%2018%200%200040%204.25%206.83%206.83%200%200035.53%202a5.06%205.06%200%2000-5.59%204.44.66.66%200%20000%20.14v2c.08%204.07-1.94%209.9-2.7%2012.1-.14.39-.23.67-.27.81a48.82%2048.82%200%2001-2.57%207.21%2010.31%2010.31%200%2001-2.72%203.55V66.84a34.2%2034.2%200%20004.59%201%2013%2013%200%20001.69.11H58.26a5.6%205.6%200%20004.18-9.34%206.44%206.44%200%20002.79-11.32A6.39%206.39%200%200069%2041.42z%22%2F%3E%3C%2Fsvg%3E);
+}
+.money1{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 23px;
+color: white;
+}
+.money2{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  color: white;
   }
-  to {
-    transform: rotate(360deg);
+.money3{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2px;
+  font-size: 15px;
+  font-weight: 600;
+  color: wheat;
+}
+.whychoose{
+  padding-top: 80px;
+}
+
+
+@media (max-width:900px) {
+  nav{
+    height: 15;
+  }
+  .tspan{
+    height: 82%;
+    width: 5%;
+  }
+  .img1{
+    width: 30%;
+  }
+}
+#travelblog{
+  width: 100vw;
+  height: 100vh;
+}
+.main4{
+  height: 100vh;
+  width: 100vw;
+}
+.test{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.test1{
+  font-size: 30px;
+  font-weight: 600;
+}
+.test2{
+  font-size: 18px;
+}
+.main40{
+  border-radius: 100px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUWE-8O8SjSsNOMV0gf08drU7KphsMoFqE5fAZc0SzmUWSOd9ftld1qmUm57H37Ekj_nM&usqp=CAU);
+  background-size: 30px;
+}
+.main43{
+  color:rgb(155, 150, 144) ;
+  font-size: 12px;
+}
+.mud{
+  color: orangered;
+  margin-top: 10px;
+}
+.main5{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.relative input{
+  overflow: hidden;
+ outline: none;
+  display: flex;
+  justify-content: center;
+}
+.relative label{
+  outline: none;
+  overflow: hidden;
+}
+.int button{
+  width: 150px;
+}
+.int button:hover{
+  background-color: gray;
+}
+.muza{
+  overflow-y: hidden;
+}
+@media (max-width:450px) {
+  .leftnav{
+    height: 18px;
+  }
+  .nav2{
+    width: 30vw;
   }
 }
